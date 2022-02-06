@@ -7,7 +7,7 @@ rm *.srl
 # - The 'days' option must be less or equal to 825 to support Apple´s 'Requirements for trusted certificates' (https://support.apple.com/en-us/HT210176)
 # - The 'sha256' value is important and must be of family 2xx. SHA1 is not supported by most Operating Systems anymore
 # - Change the over values to fit to your needs
-openssl req -x509 -newkey rsa:4096 -days 700 -sha256 -nodes -keyout ca-key.pem -out ca-cert.pem -subj "/C=DE/ST=YOURCOUNTRY/L=YOURCITY/O=YOURCANAME/OU=HQ/CN=*.YOURCADOMAIN.com/emailAddress=YOU@YOURAUTHORITY.com"
+openssl req -x509 -newkey rsa:4096 -days 700 -sha256 -nodes -keyout ca-key.pem -out ca-cert.pem -subj "/C=DE/ST=YOURCOUNTRY/L=YOURCITY/O=YOURCANAME/OU=YOUROU/CN=*.YOURCADOMAIN.com/emailAddress=YOU@YOURAUTHORITY.com"
 echo "CA´s self-signed certificate:"
 openssl x509 -in ca-cert.pem -noout -text # Subject for next command can be fetched from here
 
