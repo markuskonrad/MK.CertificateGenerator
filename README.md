@@ -12,7 +12,7 @@ Kudos to [TechSchool](<https://www.youtube.com/c/TECHSCHOOLGURU/about>). Their v
 1. Clone Repo
 1. Add all required url´s to server-ext.cnf
 1. Update line 10 with data of your own CA. The values must not be realistic domains/names.
-1. Update lien 16 with data of your server. So enter the planned domain (e.g. myserver.mydomain.com). The values must not be realistic domains/names but if you configure it in your own domain, you cannot reach them in the public Internet anymore.
+1. Update line 16 with data of your server. So enter the planned domain (e.g. myserver.mydomain.com). The values must not be realistic domains/names but if you configure it in your own domain, you cannot reach them in the public Internet anymore.
 1. Run `chmod +x gen.sh` - This makes the script executable
 1. Run `./gen.sh`
 1. Generated documents should appear in same folder
