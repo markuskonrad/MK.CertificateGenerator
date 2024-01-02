@@ -26,4 +26,8 @@ echo "Verify is Cert is valid:"
 openssl verify -CAfile ca-cert.pem server-cert.pem
 
 # 5. Convert ca-cert.pem to CER file (Windows)
+echo "Generating Windows Cert File (.cer)"
 openssl x509 -in ca-cert.pem -outform pem -outform der -out ca-cert.cer
+
+echo "--------"
+echo "See README.md for explanation of generated files.

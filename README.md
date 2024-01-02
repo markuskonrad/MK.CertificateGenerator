@@ -23,3 +23,4 @@ Kudos to [TechSchool](<https://www.youtube.com/c/TECHSCHOOLGURU/about>). Their v
 * server-req.pem --> The request created via line 16
 * serer-cert.pem --> The server certificate
 * server-key.pem --> The server private key
+* ca-cert.cer --> The CA´s certificate used for server certificate generation (windows format as .cer)
