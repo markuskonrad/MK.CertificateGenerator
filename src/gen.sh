@@ -24,3 +24,6 @@ openssl x509 -in server-cert.pem -noout -text
 # 4. Verify Certificate
 echo "Verify is Cert is valid:"
 openssl verify -CAfile ca-cert.pem server-cert.pem
+
+# 5. Convert ca-cert.pem to CER file (Windows)
+openssl x509 -in ca-cert.pem -outform pem -outform der -out ca-cert.cer
